@@ -384,12 +384,13 @@ function getResult() {
     }
 
     window.localStorage.setItem('mbti',MBTI);
+    console.log(localStorage)
 }
 
-
+//여기가 잘못된 것 같아!
 $(document).ready(function(){
     $('#result-btn').click(function(){
         getResult();
-        window.location = './result.html?mbti=ESTJ';
+        window.location.href = "result.html?mbti=ESTJ";
     });
 });

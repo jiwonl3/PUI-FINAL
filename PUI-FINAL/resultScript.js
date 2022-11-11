@@ -12,6 +12,7 @@ for(let i=0; i<localStorage.length;i++){
     validation = localStorage.key(i);
 }
 
+//여기가 잘못됐다
 if(validation=='mbti'){
     const url = window.location.search;
     const urlParams = new URLSearchParams(url);
@@ -21,7 +22,8 @@ if(validation=='mbti'){
     chosenMBTI = localStorage.getItem('mbti');
     urlParams.set('mbti',chosenMBTI);
     let newParams = urlParams.toString();
-    window.open(location.pathname+'?'+newParams,'_self');
+    window.location.replace("https://jiwonl3.github.io/PUI-FINAL/PUI-FINAL/result.html?mbti="+chosenMBTI);
+    // window.open(location.pathname+'?'+newParams,'_self');
 } else{
     const url = window.location.search;
     const urlParams = new URLSearchParams(url);
@@ -29,12 +31,11 @@ if(validation=='mbti'){
     console.log(chosenMBTI)
 }
 
-console.log(chosenMBTI);
+// console.log(chosenMBTI);
 
-//MBTI 태그 변경
+
 mbti.innerText = '#' + chosenMBTI;
 
-//캐릭터 이름 변경
 if(chosenMBTI == 'ISTJ'){
     $('#chaImg').attr("src","./character/"+chosenMBTI+".png")
     character.innerText = 'Logistician Cabbage';
@@ -366,5 +367,6 @@ $(document).ready(function(){
 
     $('#redo-btn').click(function(){
         alert("I'm working on the test page!")
+        window.location.replace("https://jiwonl3.github.io/PUI-FINAL/PUI-FINAL/index.html");
     });
 });
