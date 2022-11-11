@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI TEST</title>
+    <link rel="stylesheet" href="./resultStyle.css">
+    <script src="./resultScript.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+        <!-- 결과 화면 -->
+        <section id="result-page">
+            <div class="wrapper">
+                <div class="imgArea">
+                    <img id='chaImg' src="./character/ESTJ.png" alt="">
+                </div>
+
+                <p class="mbti">#ESTJ</p>
+                <h2 class="result-name">Executive Onion</h2>
+                <p class="result-charac" id="chaDesc">Excellent administrators, unsurpassed at managing things – or people</p>
+            
+                <div class="box">
+                    <h3 class="result-desc" id="desc">About You</h3>
+                    <ul class="result-desc-list" id="descList">
+                        <li class="you-li" id="descList-1">You are extroverted, observant, thinking, and judging..</li>
+                        <li class="you-li" id="descList-2">You possess great fortitude, emphatically following your own sensible judgment.</li>
+                        <li class="you-li" id="descList-3">You often serve as a stabilizing force among others, able to offer solid direction amid adversity.</li>
+                    </ul>
+                </div>
+
+                <div class="box2">
+                    <h3 class="result-desc" id="strength">Strength</h3>
+                    <div class="str-tag">
+                        <p class="str" id="strContent-1">#Dedicated</p>
+                        <p class="str" id="strContent-2">#Strong-willed</p>
+                        <p class="str" id="strContent-3">#Direct and honest</p>
+                        <p class="str" id="strContent-4">#Loyalm patient and reliable</p>
+                        <p class="str" id="strContent-5">#Enjoy creating order</p>
+                        <p class="str" id="strContent-6">#Excellent organizers</p>
+                    </div>
+                </div>
+            
+                <div>
+                    <h3 class="result-desc" id="advice">Advice</h3>
+                    <p class="desc-li" id="advContent-1">Being more flexible will be good for you.</p>
+                </div>
+
+                <div>
+                    <h3 class="result-desc" id="wrp">Workplace Habit</h3>
+                    <p class="desc-li" id="wrpContent-1">Among colleagues,no one can be trusted more to ensure that projects are finished on time and by the book than this person.</p>
+                </div>
+            
+                <!-- <div>
+                    <h3 class="result-desc" id="match">PERFECT MATCH WITH</h3>
+                    <img class="result-desc-img" src="" alt="">
+                    <img class="result-desc-img" src="" alt="">
+                </div> -->
+            
+                <button id="copy-btn">COPY TO SHARE</button>
+                <button id="redo-btn">REDO THE TEST</button>
+            </div>
+        </section>
+</body>
+</html>

@@ -1,0 +1,258 @@
+/* 공통 */
+@font-face {
+    font-family: 'cocola';
+    src: url(./font/cocola/Cocola.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'graphik-regualr';
+    src: url(./font/graphik/Graphik-Regular-Trial.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'graphik-bold';
+    src: url(./font/graphik/Graphik-Bold-Trial.otf) format('truetype');
+}
+
+
+@font-face {
+    font-family: 'neue-regular';
+    src: url(./font/neue/NeueMachina-Regular.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'neue-bold';
+    src: url(./font/neue/NeueMachina-Ultrabold.otf) format('truetype');
+}
+
+body {
+    font-family: 'graphik-regualr';
+}
+
+
+/* 시작페이지 */
+#start-page {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+#start-page .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+h1 {
+    font-family: 'cocola';
+    /* text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; */
+    -webkit-text-stroke: 1px black;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    margin: 15px 20px 10px 20px;
+}
+
+.tag-design {
+    background-color: #CCF4CE;
+    border-radius: 5px;
+    padding: 1px 5px 1px 5px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#start-page-tag {
+    margin: 0 auto;
+}
+
+#start-page-desc {
+    font-size: 16px;
+    text-align: center;
+    margin: 0px 20px 0px 20px;
+}
+
+#start-btn {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #00C708;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 150px;
+    cursor: pointer;
+}
+
+
+.character-img {
+    width: 232px;
+    margin: 150px auto 20px auto;
+}
+
+
+/* 질문페이지 */
+#main-page {
+    display: none;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    margin: 20px auto 20px auto;
+}
+
+#main-page .wrapper {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.main-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.q-sequence {
+    font-size: 12px;
+    color: #cecece;
+}
+
+.prev_btn {
+    font-size: 12px;
+    color: #cecece;
+}
+
+.progress-bar {
+    height: 7px;
+    width: 100%;
+    background-color: #F6F6F6;
+    border-radius: 100px;
+}
+
+.progress-bar-current {
+    height: 7px;
+    width: 8%;
+    background-color: #2A5CF3;
+    border-radius: 100px;
+}
+
+.q-counter {
+    font-size: 36px;
+    color: #2A5CF3;
+    font-family: 'graphik-bold';
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+.q-content {
+    font-size: 28px;
+    font-family: 'graphik-bold';
+    line-height: 1.4;
+    margin-top: 0px;
+}
+
+.main-page-option {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.main-page-option .quest-answer {
+    background-color: #F6F6F6;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-family: 'graphik-regular';
+    font-weight: 700;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    height: 84px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#q2, #q3, #q4, #q5, #q6, #q7, #q8, #q9, #q10, #q11, #q12{
+    display: none;
+}
+
+
+/* 로딩페이지 */
+#loading-page {
+    display: none;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    margin: 20px auto 20px auto;
+}
+
+#loading-page .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.loading-text {
+    font-family: 'cocola';
+    /* text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; */
+    -webkit-text-stroke: 2px black;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin: 15px 20px 10px 20px;
+}
+
+.loading-img {
+    opacity: 0%;
+    height: 110px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.loading-img-top {
+    margin: 150px auto 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.loading-img-bottom {
+    margin: 20px auto 20px auto;
+}
+
+#result-btn {
+    display: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #00C708;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 150px;
+    cursor: pointer;
+}
+
+
+/* 로딩페이지 */
+#result-page {
+    display: none;
+}
+
+

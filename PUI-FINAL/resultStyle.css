@@ -1,0 +1,174 @@
+/* 공통 */
+@font-face {
+    font-family: 'cocola';
+    src: url(./font/cocola/Cocola.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'graphik-regualr';
+    src: url(./font/graphik/Graphik-Regular-Trial.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'graphik-bold';
+    src: url(./font/graphik/Graphik-Bold-Trial.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'neue-regular';
+    src: url(./font/neue/NeueMachina-Regular.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'neue-bold';
+    src: url(./font/neue/NeueMachina-Ultrabold.otf) format('truetype');
+}
+
+body {
+    font-family: 'graphik-regualr';
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+#result-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    min-width: 375px;
+}
+
+#result-page .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mbti {
+    font-family: 'neue-bold';
+    background-color: #BBD5FF;
+    border-radius: 150px;
+    padding: 5px 10px 5px 10px;
+    margin: 0px auto 0px auto;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.result-name {
+    font-family: 'cocola';
+    /* text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; */
+    -webkit-text-stroke: 1px black;
+    color: white;
+    font-size: 32px;
+    margin: 15px 20px 7px 20px;
+    line-height: 32px;
+}
+
+#chaDesc {
+    margin: 0px 20px 70px 20px;
+    font-family: 'neue-regular';
+}
+
+#desc, #strength, #advice, #wrp{
+    font-family: 'neue-bold';
+    margin-top: 70px;
+    margin-bottom: 7px;
+}
+
+#desc {
+    margin-top: 30px;
+}
+
+#descList {
+    text-align: left;
+}
+
+li {
+    margin: 10px 0;
+}
+
+.box {
+    background-color: #FBFBFB;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+
+.box2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.str-tag {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.str {
+    font-family: 'neue-bold';
+    background-color: #BBD5FF;
+    border-radius: 150px;
+    padding: 5px 10px 5px 10px;
+    margin: 5px 5px 0px 0px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.desc-li {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+}
+
+#copy-btn, #redo-btn {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 150px;
+    cursor: pointer;
+}
+
+#copy-btn {
+    background-color: #0057E1;
+    border: none;
+    color: white;
+    margin-top: 100px;
+}
+
+#redo-btn {
+    border: 2px solid #0057E1;
+    background-color: white;
+    color: #0057E1;
+    margin-top: 5px;
+}
+
+#chaImg {
+    width: 232px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 200px;
+}
+
+.imgArea {
+    background-image: url(./Group\ 44.png);
+    background-position: center -30%;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+}

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI TEST</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <!-- 시작 화면 -->
+    <section id="start-page" role="group" aria-label="1/12">
+        <div class="wrapper">
+            <img class="character-img" src="./start-page-img/Group 38 (1).png" alt="">
+
+        
+            <div id="start-page-tag">
+                <span class="tag-design">#MBTI</span>
+                <span class="tag-design">#TEST</span>
+            </div>
+    
+            <div id="start-page-title">
+                <h1>WHAT KIND OF VEGETABLE ARE YOU?</h1>
+            </div>
+    
+            <p id="start-page-desc">Check out your workspace personality and who has the best compotibility!</p>
+            <button id="start-btn">START TO TEST</button>
+        </div>
+
+    </section>
+
+    <!-- 질문 화면 -->
+    <section id="main-page">
+        <div class="wrapper">
+            <div id="q1" role="group" aria-label="2/12">
+                <div class="main-page-header">
+                    <div class="main-page-q-info">
+                        <img class="back_btn" src="" alt="">
+                        <p class="prev_btn">PREVIOUS QUESTION</p>
+                    </div>
+                    <div class="q-sequence">1/12</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-bar-current"></div>
+                </div>
+        
+                <div class="main-page-question">
+                    <h2 class="q-counter">Q1</h2>
+                    <p class="q-content">When you have an early morning meeting, what would be your arrival time?</p>
+                </div>
+        
+                <div class="main-page-option">
+                    <!-- <input type="radio" name="q1-test" value="1">Arrive 10 minutes before the meeting time -->
+                    <button class="quest-1 quest-answer" id="q1-option-1" value="1">Arrive 10 minutes before the meeting time</button>
+                    <button class="quest-1 quest-answer" id="q1-option-2" value="2">Arrive just in time for the meeting time</button>
+                </div>
+            </div>
+        
+            <div id="q2" role="group" aria-label="3/12">
+                <div class="main-page-header">
+                    <div class="main-page-q-info">
+                        <img class="back_btn" src="" alt="">
+                        <p class="prev_btn">PREVIOUS QUESTION</p>
+                    </div>
+                    <div class="q-sequence">2/12</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-bar-current"></div>
+                </div>
+        
+                <div class="main-page-question">
+                    <h2 class="q-counter">Q2</h2>
+                    <p class="q-content">How would you handle things when you have a pile of to-dos?</p>
+                </div>
+        
+                <div class="main-page-option">
+                    <button class="quest-2 quest-answer" id="q2-option-1" value="1">Make a to-do list first, and process them sequentially</button>
+                    <button class="quest-2 quest-answer" id="q2-option-2" value="2">Based on work situation, deal with it flexibly</button>
+                </div>
+            </div>
+
+            
+            <div  id="q3" role="group" aria-label="4/12">
+                <div class="main-page-header">
+                    <div class="main-page-q-info">
+                        <img class="back_btn" src="" alt="">
+                        <p class="prev_btn">PREVIOUS QUESTION</p>
+                    </div>
+                    <div class="q-sequence">3/12</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-bar-current"></div>
+                </div>
+        
+                <div class="main-page-question">
+                    <h2 class="q-counter">Q3</h2>
+                    <p class="q-content">On the last day of the project presentation, what would you think just before the presentation?</p>
+                </div>
+        
+                <div class="main-page-option">
+                    <button class="quest-3 quest-answer" id="q3-option-1" value="2">Think that the success or failure of the presentation is left to the luck</button>
+                    <button class="quest-3 quest-answer" id="q3-option-2" value="1">Memorize the script and the expected questions</button>
+                </div>
+            </div>
+        
+            <div id="q4" role="group" aria-label="5/12">
+                <div class="main-page-header">
+                    <div class="main-page-q-info">
+                        <img class="back_btn" src="" alt="">
+                        <p class="prev_btn">PREVIOUS QUESTION</p>
+                    </div>
+                    <div class="q-sequence">4/12</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-bar-current"></div>
+                </div>
+        
+                <div class="main-page-question">
+                    <h2 class="q-counter">Q4</h2>
+                    <p class="q-content">On the way to a meeting, what would you do if you see the team member in front of you?</p>
+                </div>
+        
+                <div class="main-page-option">
+                    <button class="quest-4 quest-answer" id="q4-option-1" value="1">Don’t follw them, just walk at my own pace</button>
+                    <button class="quest-4 quest-answer" id="q4-option-2" value="2">Say ‘Hi’, and walk together</button>
+                </div>
+            </div>
+        
+            <div id="q5" role="group" aria-label="6/12">
+                <div class="main-page-header">
+                    <div class="main-page-q-info">
+                        <img class="back_btn" src="" alt="">
+                        <p class="prev_btn">PREVIOUS QUESTION</p>
+                    </div>
+                    <div class="q-sequence">5/12</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-bar-current"></div>
+                </div>
+        
+                <div class="main-page-question">
+                    <h2 class="q-counter">Q5</h2>
+                    <p class="q-content">When you move to a new team, what would you do first?</p>
+                </div>
+        
+                <div class="main-page-option">
+                    <button class="quest-5 quest-answer" id="q5-option-1" value="2">Greet new team members</button>
+                    <button class="quest-5 quest-answer" id="q5-option-2" value="1">Look through the old history to adapt to the new team</button>
+                </div>
+            </div>
+        
+            <div id="q6" role="group" aria-label="7/12">
+                <div class="main-page-header">
+                    <div class="main-page-q-info">
+                        <img class="back_btn" src="" alt="">
+                        <p class="prev_btn">PREVIOUS QUESTION</p>
+                    </div>
+                    <div class="q-sequence">6/12</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-bar-current"></div>
+                </div>
+        
+                <div class="main-page-question">
+                    <h2 class="q-counter">Q6</h2>
+                    <p class="q-content">If you had to choose between two bosses, which one would you like to work with?</p>
+                </div>
+        
+                <div class="main-page-option">
+                    <button class="quest-6 quest-answer" id="q6-option-1" value="1">A person with great abilities, but a cold and negative person</button>
+                    <button class="quest-6 quest-answer" id="q6-option-2" value="2">A person who is not good at work, but is warm and positive</button>
+                </div>
+            </div>
+        
+        
+            <div id="q7" role="group" aria-label="8/12">
+                <div class="main-page-header">
+                    <div class="main-page-q-info">
+                        <img class="back_btn" src="" alt="">
+                        <p class="prev_btn">PREVIOUS QUESTION</p>
+                    </div>
+                    <div class="q-sequence">7/12</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-bar-current"></div>
+                </div>
+        
+                <div class="main-page-question">
+                    <h2 class="q-counter">Q7</h2>
+                    <p class="q-content">If you had to select a new project, what project would you choose?</p>
+                </div>
+        
+                <div class="main-page-option">
+                    <button class="quest-7 quest-answer" id="q7-option-1" value="1">Choose a job that is more conducive to your career</button>
+                    <button class="quest-7 quest-answer" id="q7-option-2" value="2">Choose a job that appeals to you more</button>
+                </div>
+            </div>
+        
+            <div id="q8" role="group" aria-label="9/12">
+                <div class="main-page-header">
+                    <div class="main-page-q-info">
+                        <img class="back_btn" src="" alt="">
+                        <p class="prev_btn">PREVIOUS QUESTION</p>
+                    </div>
+                    <div class="q-sequence">8/12</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-bar-current"></div>
+                </div>
+        
+                <div class="main-page-question">
+                    <h2 class="q-counter">Q8</h2>
+                    <p class="q-content">If you was given a new project, how would you proceed?</p>
+                </div>
+        
+                <div class="main-page-option">
+                    <button class="quest-8 quest-answer" id="q8-option-1" value="1">Pursue a safe direction based on previous data</button>
+                    <button class="quest-8 quest-answer" id="q8-option-2" value="2">Trust your intuition and try a new direction</button>
+                </div>
+            </div>
+        
+            <div id="q9" role="group" aria-label="10/12">
+                <div class="main-page-header">
+                    <div class="main-page-q-info">
+                        <img class="back_btn" src="" alt="">
+                        <p class="prev_btn">PREVIOUS QUESTION</p>
+                    </div>
+                    <div class="q-sequence">9/12</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-bar-current"></div>
+                </div>
+        
+                <div class="main-page-question">
+                    <h2 class="q-counter">Q9</h2>
+                    <p class="q-content">On Friday night, if you can go home early, what would you do?</p>
+                </div>
+        
+                <div class="main-page-option">
+                    <button class="quest-9 quest-answer" id="q9-option-1" value="1">Go straight home and do what you want to do and rest</button>
+                    <button class="quest-9 quest-answer" id="q9-option-2" value="2">Call your friends and have dinner together in a nice place</button>
+                </div>
+            </div>
+
+            <div id="q10" role="group" aria-label="10/12">
+                <div class="main-page-header">
+                    <div class="main-page-q-info">
+                        <img class="back_btn" src="" alt="">
+                        <p class="prev_btn">PREVIOUS QUESTION</p>
+                    </div>
+                    <div class="q-sequence">10/12</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-bar-current"></div>
+                </div>
+        
+                <div class="main-page-question">
+                    <h2 class="q-counter">Q10</h2>
+                    <p class="q-content">When your colleague sent you a message that the file that he worked hard on was gone, how would you respond?</p>
+                </div>
+        
+                <div class="main-page-option">
+                    <button class="quest-10 quest-answer" id="q10-option-1" value="1">Try to find solutions like asking whether he have backed up</button>
+                    <button class="quest-10 quest-answer" id="q10-option-2" value="2">Try to Sympathize with him because you know how hard he worked on</button>
+                </div>
+            </div>
+
+            <div id="q11" role="group" aria-label="10/12">
+                <div class="main-page-header">
+                    <div class="main-page-q-info">
+                        <img class="back_btn" src="" alt="">
+                        <p class="prev_btn">PREVIOUS QUESTION</p>
+                    </div>
+                    <div class="q-sequence">11/12</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-bar-current"></div>
+                </div>
+        
+                <div class="main-page-question">
+                    <h2 class="q-counter">Q11</h2>
+                    <p class="q-content">When you read an article about a new trend related to your team, what would be your actions?</p>
+                </div>
+        
+                <div class="main-page-option">
+                    <button class="quest-11 quest-answer" id="q11-option-1" value="1">Keep it private</button>
+                    <button class="quest-11 quest-answer" id="q11-option-2" value="2">Share with team members</button>
+                </div>
+            </div>
+       
+        
+            <div id="q12" role="group" aria-label="11/12">
+                <div class="main-page-header">
+                    <div class="main-page-q-info">
+                        <img class="back_btn" src="" alt="">
+                        <p class="prev_btn">PREVIOUS QUESTION</p>
+                    </div>
+                    <div class="q-sequence">12/12</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-bar-current"></div>
+                </div>
+        
+                <div class="main-page-question">
+                    <h2 class="q-counter">Q12</h2>
+                    <p class="q-content">While doing this test, you would:</p>
+                </div>
+        
+                <div class="main-page-option">
+                    <button class="quest-12 quest-answer" id="q12-option-1" value="1">Participate without thinking</button>
+                    <button class="quest-12 quest-answer" id="q12-option-2" value="2">Think about the logic of this test</button>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+   
+    <!-- 분석 화면 -->
+    <div id="loading-page" role="group" aria-label="12/12">
+        <div class="wrapper">
+            <div class="loading-img-top">
+                <img class="loading-img" id="loading-img-1" src="./Loading-img/제목_없는_아트워크 4 3.png" alt="">
+                <img class="loading-img" id="loading-img-2" src="./Loading-img/제목_없는_아트워크 4 8.png" alt="">
+                <img class="loading-img" id="loading-img-3" src="./Loading-img/제목_없는_아트워크 4 5.png" alt="">
+                <img class="loading-img" id="loading-img-4" src="./Loading-img/제목_없는_아트워크 4 1.png" alt="">
+            </div>
+            <div id="loading-text-test" class="loading-text">ANALYSING YOUR CHARACTER</div>
+            <div class="loading-img-bottom">
+                <img class="loading-img" id="loading-img-5" src="./Loading-img/제목_없는_아트워크 5.png" alt="">
+                <img class="loading-img" id="loading-img-6" src="./Loading-img/제목_없는_아트워크 4 2.png" alt="">
+                <img class="loading-img" id="loading-img-7" src="./Loading-img/제목_없는_아트워크 4 4.png" alt="">
+                <img class="loading-img" id="loading-img-8" src="./Loading-img/제목_없는_아트워크 4 7.png" alt="">
+            </div>
+
+            <button id="result-btn" class="show-result-btn">SHOW MY RESULT</button>
+        </div>
+    </div>
+
+    <!-- 결과 화면 -->
+    <section id="result-page">
+        <div class="wrapper">
+            <p class="mbti">#ISTP</p>
+            <h2 class="result-name">SOULLESS TOMATO</h2>
+            <p class="result-charac">You, who adapts well to any sudden change, are like a <b>TOMATO</b>which can be juice, jam, or ketchup.</p>
+        
+            <h3 class="result-desc">ABOUT TOMATO</h3>
+            <ul class="result-desc-list">
+                <li>You are realistic, objective, and logical person.</li>
+                <li>You adapt well to sudden changes and react calmly to emergency situations.</li>
+                <li>You're always looking for shortcuts. To put it more extreme, you even tend to save effort.</li>
+                <li>You're stubborn and have a strong subjectivity.</li>
+                <li>You're indifferent to things you are not interested in or to others.</li>
+            </ul>
+        
+            <div>
+                <h3 class="result-desc">ADVICE FOR TOMATO</h3>
+                <ul class="result-desc-list">
+                    <li>Try to give someone, who does something well, a small compliment!</li>
+                    <li>Try to give someone, who needs help, helps.</li>
+                </ul>
+            </div>
+        
+            <div>
+                <h3 class="result-desc">TOMATO HATES THESE</h3>
+                <ul class="result-desc-list">
+                    <li>Tomato dislikes being interrupted its personal time.</li>
+                    <li>Tomato is usually blunt, so don't get hurt!</li>
+                </ul>
+            </div>
+        
+            <div>
+                <h3 class="result-desc">PERFECT MATCH</h3>
+                <img class="result-desc-img" src="" alt="">
+                <img class="result-desc-img" src="" alt="">
+            </div>
+        
+            <button id="copy-btn">COPY TO SHARE</button>
+            <button id="redo-btn">REDO THE TEST</button>
+        </div>
+    </section>
+</body>
+</html>
