@@ -81,8 +81,8 @@ body {
 
 #desc, #strength, #advice, #wrp{
     font-family: 'neue-bold';
-    margin-top: 70px;
-    margin-bottom: 7px;
+    margin-top: 75px;
+    margin-bottom: 10px;
 }
 
 #desc {
@@ -97,32 +97,18 @@ li {
     margin: 10px 0;
 }
 
-.box {
-    background-color: #FBFBFB;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-bottom: 10px;
-}
 
-.box2 {
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-}
 
 .str-tag {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .str {
     font-family: 'neue-regular';
-    background-color: #BBD5FF;
+    background-color: #DAECFF;
     border-radius: 150px;
     padding: 5px 10px 5px 10px;
     margin: 5px 5px 0px 0px;
@@ -148,19 +134,14 @@ li {
     cursor: pointer;
 }
 
-#copy-btn {
+#redo-btn {
     background-color: #0057E1;
     border: none;
     color: white;
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 
-#redo-btn {
-    border: 2px solid #0057E1;
-    background-color: white;
-    color: #0057E1;
-    margin-top: 5px;
-}
 
 #chaImg {
     width: 232px;
@@ -176,4 +157,52 @@ li {
     background-repeat: no-repeat;
     height: 500px;
     width: 100%;
+}
+
+.box {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+
+.box2 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.box3 {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.peoplebox {
+    display: flex;
+    gap: 30px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 30px 30px 30px;
+    -webkit-box-shadow: 12px 10px 77px -35px rgba(148,148,148,0.39);
+    -moz-box-shadow: 12px 10px 77px -35px rgba(148,148,148,0.39);
+    box-shadow: 12px 10px 77px -35px rgba(148,148,148,0.39);
+    align-items: center;
+}
+
+.people {
+    text-align: left;
+    font-family: 'graphik-bold';
+    margin-bottom: 0px;
+}
+
+.desc-people {
+    text-align: left;
+    margin-top: 0px;
+}
+
+#peoplebox1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
