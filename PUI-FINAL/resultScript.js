@@ -22,7 +22,7 @@ if(validation=='mbti'){
     chosenMBTI = localStorage.getItem('mbti');
     urlParams.set('mbti',chosenMBTI);
     let newParams = urlParams.toString();
-    window.location.replace("https://jiwonl3.github.io/PUI-FINAL/PUI-FINAL/result.html?mbti="+chosenMBTI);
+    window.location.replace("./result.html?mbti="+chosenMBTI);
     // window.open(location.pathname+'?'+newParams,'_self');
 } else{
     const url = window.location.search;
@@ -361,12 +361,22 @@ if(chosenMBTI == 'ENTJ'){
 //퍼펙리스트 리스트 변경
 
 $(document).ready(function(){
-    $('#copy-btn').click(function(){
-        alert("I'm working on the test page!")
-    });
-
     $('#redo-btn').click(function(){
         alert("I'm working on the test page!")
         window.location.replace("https://jiwonl3.github.io/PUI-FINAL/PUI-FINAL/index.html");
     });
+
+    $('#copy-btn').click(function(){
+        $('#snackbar').attr('id','snack-bar')
+        setTimeout(function(){
+            $('#snack-bar').attr('id','snackbar')},3000);
+        var $temp = $("<input>");
+        var $url = $(location).attr('href');
+            
+        $("body").append($temp);
+        $temp.val($url).select();
+        document.execCommand("copy");
+        $temp.remove();
+    })
 });
+

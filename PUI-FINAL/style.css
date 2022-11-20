@@ -29,7 +29,6 @@ body {
     font-family: 'graphik-regualr';
 }
 
-
 /* 시작페이지 */
 #start-page {
     display: flex;
@@ -81,7 +80,7 @@ h1 {
     padding-bottom: 15px;
     font-size: 16px;
     font-weight: 700;
-    background-color: #00C708;
+    background-color: #2A5CF3;
     border: none;
     color: white;
     text-align: center;
@@ -111,12 +110,15 @@ h1 {
 #main-page .wrapper {
     margin-left: 40px;
     margin-right: 40px;
+    min-width: 375px;
 }
 
 .main-page-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .q-sequence {
@@ -127,6 +129,17 @@ h1 {
 .prev_btn {
     font-size: 12px;
     color: #cecece;
+}
+
+.back_btn {
+    width: 7px;
+    height: 13.5px;
+    margin-right: 10px;
+}
+
+.main-page-q-info {
+    display: flex;
+    align-items: center;
 }
 
 .progress-bar {
@@ -183,6 +196,11 @@ h1 {
     cursor: pointer;
 }
 
+.main-page-option .quest-answer:hover {
+    background-color: #2A5CF3;
+    color: white;
+}
+
 #q2, #q3, #q4, #q5, #q6, #q7, #q8, #q9, #q10, #q11, #q12{
     display: none;
 }
@@ -203,6 +221,7 @@ h1 {
     justify-content: center;
     margin-left: 40px;
     margin-right: 40px;
+    min-width: 375px;
 }
 
 .loading-text {
@@ -238,7 +257,7 @@ h1 {
     padding-bottom: 15px;
     font-size: 16px;
     font-weight: 700;
-    background-color: #00C708;
+    background-color: #2A5CF3;
     border: none;
     color: white;
     text-align: center;
@@ -256,3 +275,8 @@ h1 {
 }
 
 
+/* width = 414 */
+
+@media (414px >= width) {
+    
+}

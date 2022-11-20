@@ -184,6 +184,7 @@ $(document).ready(function(){
     });
 });
 
+
 $(document).ready(function(){
     $('#q12-option-1').click(function(){
         $('#q12').attr('id','q12-done');

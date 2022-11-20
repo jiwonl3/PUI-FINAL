@@ -177,3 +177,62 @@ li {
     height: 500px;
     width: 100%;
 }
+
+#snackbar {
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    visibility: hidden;
+}
+
+#snack-bar {
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    visibility: visible ;
+    /* fadeout Time decided in 
+       accordance to Total Time */
+    /* In case, Time = 3s, 
+       fadeout 0.5s 2.5s */
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+  
+/* when the Snackbar Disappears
+   from the Screen */
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
