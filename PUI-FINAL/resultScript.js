@@ -8,28 +8,39 @@ let hateContent = document.querySelector('#hateContent');
 let chosenMBTI = '';
 
 
-for(let i=0; i<localStorage.length;i++){
-    validation = localStorage.key(i);
-}
+// for(let i=0; i<localStorage.length;i++){
+//     validation = localStorage.key(i);
+// }
 
 //여기가 잘못됐다
-if(validation=='mbti'){
+if("mbti" in localStorage){
+    chosenMBTI = localStorage.getItem('mbti');
+    history.pushState('','','result.html?mbti='+chosenMBTI)
+    localStorage.clear();
     const url = window.location.search;
     const urlParams = new URLSearchParams(url);
     chosenMBTI = urlParams.get('mbti');
-    console.log(chosenMBTI)
-
-    chosenMBTI = localStorage.getItem('mbti');
-    urlParams.set('mbti',chosenMBTI);
-    let newParams = urlParams.toString();
-    window.location.replace("./result.html?mbti="+chosenMBTI);
-    // window.open(location.pathname+'?'+newParams,'_self');
-} else{
+} else {
     const url = window.location.search;
     const urlParams = new URLSearchParams(url);
     chosenMBTI = urlParams.get('mbti');
     console.log(chosenMBTI)
 }
+
+// if(cho){
+//     const url = window.location.search;
+//     const urlParams = new URLSearchParams(url);
+//     chosenMBTI = localStorage.getItem('mbti');
+//     urlParams.set('mbti',chosenMBTI);
+//     let newParams = urlParams.toString();
+//     window.location.replace("./result.html?mbti="+chosenMBTI);
+//     // window.open(location.pathname+'?'+newParams,'_self');
+// } else{
+//     const url = window.location.search;
+//     const urlParams = new URLSearchParams(url);
+//     chosenMBTI = urlParams.get('mbti');
+//     console.log(chosenMBTI)
+// }
 
 // console.log(chosenMBTI);
 
@@ -362,7 +373,6 @@ if(chosenMBTI == 'ENTJ'){
 
 $(document).ready(function(){
     $('#redo-btn').click(function(){
-        alert("I'm working on the test page!")
         window.location.replace("https://jiwonl3.github.io/PUI-FINAL/PUI-FINAL/index.html");
     });
 
@@ -379,4 +389,3 @@ $(document).ready(function(){
         $temp.remove();
     })
 });
-

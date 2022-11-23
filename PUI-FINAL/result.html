@@ -12,58 +12,67 @@
 <body>
         <!-- 결과 화면 -->
         <section id="result-page">
-            <div class="wrapper">
-                <div class="imgArea">
-                    <img id='chaImg' src="./character/ESTJ.png" alt="">
-                </div>
-
-                <p class="mbti">#ESTJ</p>
-                <h2 class="result-name">Executive Onion</h2>
-                <p class="result-charac" id="chaDesc">Excellent administrators, unsurpassed at managing things – or people</p>
-            
-                <div class="box">
-                    <h3 class="result-desc" id="desc">About You</h3>
-                    <ul class="result-desc-list" id="descList">
-                        <li class="you-li" id="descList-1">You are extroverted, observant, thinking, and judging..</li>
-                        <li class="you-li" id="descList-2">You possess great fortitude, emphatically following your own sensible judgment.</li>
-                        <li class="you-li" id="descList-3">You often serve as a stabilizing force among others, able to offer solid direction amid adversity.</li>
-                    </ul>
-                </div>
-
-                <div class="box2">
-                    <h3 class="result-desc" id="strength">Strength</h3>
-                    <div class="str-tag">
-                        <p class="str" id="strContent-1">#Dedicated</p>
-                        <p class="str" id="strContent-2">#Strong-willed</p>
-                        <p class="str" id="strContent-3">#Direct and honest</p>
-                        <p class="str" id="strContent-4">#Loyalm patient and reliable</p>
-                        <p class="str" id="strContent-5">#Enjoy creating order</p>
-                        <p class="str" id="strContent-6">#Excellent organizers</p>
+            <div id="result-wrapper">
+                <div id="top">
+                    <div class="responsive">
+                        <img id='chaImg' src="./no-shadow/onion.png" alt="">
+                        <div class="responsive-right">
+                            <span class="mbti">#ESTJ</span>
+                            <h2 class="result-name">Executive Onion</h2>
+                            <div id = "chardesc-responsive">
+                                <p id="charDesc">Who Am I?</p>
+                                <p class="result-charac" id="chaDesc">Excellent administrators, unsurpassed at managing things – or people</p>    
+                            </div>
+                            <div class="box2">
+                                <h3 id="strength">Strength</h3>
+                                <div class="str-tag">
+                                    <p class="str" id="strContent-1">#Dedicated</p>
+                                    <p class="str" id="strContent-2">#Strong-willed</p>
+                                    <p class="str" id="strContent-3">#Direct and honest</p>
+                                    <p class="str" id="strContent-4">#Loyalm patient and reliable</p>
+                                    <p class="str" id="strContent-5">#Enjoy creating order</p>
+                                    <p class="str" id="strContent-6">#Excellent organizers</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            
-                <div class="col2">
-                    <div>
-                        <h3 class="result-desc" id="advice">Advice</h3>
-                        <p class="desc-li" id="advContent-1">Being more flexible will be good for you.</p>
+
+                <div id="bottom">
+                    <div class="sec-responsive">
+                        <div class="box">
+                            <h2 class="number">01</h2>
+                            <h3 class="result-desc" id="desc">About You</h3>
+                            <ul class="result-desc-list" id="descList">
+                                <li class="you-li" id="descList-1">You are extroverted, observant, thinking, and judging.</li>
+                                <li class="you-li" id="descList-2">You possess great fortitude, emphatically following your own sensible judgment.</li>
+                                <li class="you-li" id="descList-3">You often serve as a stabilizing force among others, able to offer solid direction amid adversity.</li>
+                            </ul>
+                        </div>
+                       
+                        <div class="thr-responsive">
+                            <div class="box-res-2">
+                                <h2 class="number">02</h2>
+                                <h3 class="result-desc" id="advice">Advice</h3>
+                                <p class="desc-li" id="advContent-1">Being more flexible will be good for you.</p>
+                            </div>
+          
+                            <div class="box-res-3"> 
+                                <h2 class="number">03</h2>
+                                <h3 class="result-desc" id="wrp">Workplace Habit</h3>
+                                <p class="desc-li" id="wrpContent-1">Among colleagues,no one can be trusted more to ensure that projects are finished on time and by the book than this person.</p>
+                            </div>
+                        </div>     
+                    </div>
+                
+                    <div class="btn">
+                        <button id="copy-btn">COPY TO SHARE</button>
+                        <button id="redo-btn">REDO THE TEST</button>
                     </div>
     
-                    <div>
-                        <h3 class="result-desc" id="wrp">Workplace Habit</h3>
-                        <p class="desc-li" id="wrpContent-1">Among colleagues,no one can be trusted more to ensure that projects are finished on time and by the book than this person.</p>
-                    </div>
-                </div>
-            
-                <!-- <div>
-                    <h3 class="result-desc" id="match">PERFECT MATCH WITH</h3>
-                    <img class="result-desc-img" src="" alt="">
-                    <img class="result-desc-img" src="" alt="">
-                </div> -->
-            
-                <button id="copy-btn">COPY TO SHARE</button>
-                <button id="redo-btn">REDO THE TEST</button>
+                    <div id="snackbar">URL is copied!</div>
 
-                <div id="snackbar">URL is copied!</div>
+                </div>
             </div>
         </section>
 </body>
