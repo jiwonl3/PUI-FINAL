@@ -27,28 +27,12 @@ if("mbti" in localStorage){
     console.log(chosenMBTI)
 }
 
-// if(cho){
-//     const url = window.location.search;
-//     const urlParams = new URLSearchParams(url);
-//     chosenMBTI = localStorage.getItem('mbti');
-//     urlParams.set('mbti',chosenMBTI);
-//     let newParams = urlParams.toString();
-//     window.location.replace("./result.html?mbti="+chosenMBTI);
-//     // window.open(location.pathname+'?'+newParams,'_self');
-// } else{
-//     const url = window.location.search;
-//     const urlParams = new URLSearchParams(url);
-//     chosenMBTI = urlParams.get('mbti');
-//     console.log(chosenMBTI)
-// }
-
-// console.log(chosenMBTI);
-
-
 mbti.innerText = '#' + chosenMBTI;
 
+
 if(chosenMBTI == 'ISTJ'){
-    $('#chaImg').attr("src","./character/"+chosenMBTI+".png")
+    $('#chaImg').attr("src","./no-shadow/"+chosenMBTI+".png")
+    $('#chaImg').attr("alt","The cabbage character who represents ISTJ")
     character.innerText = 'Logistician Cabbage';
     chaDesc.innerText = 'Practical and fact-minded individuals, whose reliability cannot be doubted';
     $('#descList-1').text("You are introverted, observant, thinking, and judging.");
@@ -68,7 +52,8 @@ if(chosenMBTI == 'ISTJ'){
 }
 
 if(chosenMBTI == 'ISFJ'){
-    $('#chaImg').attr("src","./character/"+chosenMBTI+".png")
+    $('#chaImg').attr("src","./no-shadow/"+chosenMBTI+".png")
+    $('#chaImg').attr("alt","The potato character who represents ISFJ")
     character.innerText = 'Defender Potato';
     chaDesc.innerText = 'Very dedicated and warm protectors, always ready to defend your loved ones';
     $('#descList-1').text("You are introverted, observant, feeling, and judging.");
@@ -88,7 +73,8 @@ if(chosenMBTI == 'ISFJ'){
 }
 
 if(chosenMBTI == 'INFJ'){
-    $('#chaImg').attr("src","./character/"+chosenMBTI+".png")
+    $('#chaImg').attr("src","./no-shadow/"+chosenMBTI+".png")
+    $('#chaImg').attr("alt","The carrot character who represents INFJ")
     character.innerText = 'Advocate Carrot';
     chaDesc.innerText = 'Quiet and mystical, yet very inspiring and tireless idealists';
     $('#descList-1').text("You are introverted, intuitive, feeling, and judging.");
@@ -108,7 +94,8 @@ if(chosenMBTI == 'INFJ'){
 }
 
 if(chosenMBTI == 'INTJ'){
-    $('#chaImg').attr("src","./character/"+chosenMBTI+".png")
+    $('#chaImg').attr("src","./no-shadow/"+chosenMBTI+".png")
+    $('#chaImg').attr("alt","The radish character who represents INTJ")
     character.innerText = 'Architect Radish';
     chaDesc.innerText = 'Imaginative and strategic thinkers, with a plan for everything';
     $('#descList-1').text("You are introverted, intuitive, thinking, and judging.");
@@ -128,7 +115,8 @@ if(chosenMBTI == 'INTJ'){
 }
 
 if(chosenMBTI == 'ISTP'){
-    $('#chaImg').attr("src","./character/"+chosenMBTI+".png")
+    $('#chaImg').attr("src","./no-shadow/"+chosenMBTI+".png")
+    $('#chaImg').attr("alt","The tomato character who represents ISTP")
     character.innerText = 'Virtuoso Tomato';
     chaDesc.innerText = 'Bold and practical experimenters, masters of all kinds of tools';
     $('#descList-1').text("You are introverted, observant, thinking, and prospecting.");
@@ -146,9 +134,10 @@ if(chosenMBTI == 'ISTP'){
 
     $('#wrpContent-1').text("This person has a great sense of humor, and is not only resistant to workplace conflicts, but is great at defusing them with a well-placed joke that puts it all into perspective.");
 }
-//여기서부터는 zepeto 조언 페이지를 반영하고, 커리어에 대해서는 안씀!
+
 if(chosenMBTI == 'ISFP'){
-    $('#chaImg').attr("src","./character/"+chosenMBTI+".png")
+    $('#chaImg').attr("src","./no-shadow/"+chosenMBTI+".png")
+    $('#chaImg').attr("alt","The broccoli character who represents ISFP")
     character.innerText = 'Adventurer Broccoli';
     chaDesc.innerText = 'Flexible and charming artists, always ready to explore and experience something new';
     $('#descList-1').text("You are introverted, observant, feeling, and prospecting.");
@@ -168,7 +157,8 @@ if(chosenMBTI == 'ISFP'){
 }
 
 if(chosenMBTI == 'INFP'){
-    $('#chaImg').attr("src","./character/"+chosenMBTI+".png")
+    $('#chaImg').attr("src","./no-shadow/"+chosenMBTI+".png")
+    $('#chaImg').attr("alt","The eggplant character who represents INFP")
     character.innerText = 'Mediator Eggplant';
     chaDesc.innerText = 'Poetic, kind and altruistic people, always eager to help a good cause';
     $('#descList-1').text("You are introverted, intuitive, feeling, and prospecting.");
@@ -188,7 +178,8 @@ if(chosenMBTI == 'INFP'){
 }
 
 if(chosenMBTI == 'INTP'){
-    $('#chaImg').attr("src","./character/"+chosenMBTI+".png")
+    $('#chaImg').attr("src","./no-shadow/"+chosenMBTI+".png")
+    $('#chaImg').attr("alt","The mushroom character who represents INTP")
     character.innerText = 'Logician Mushroom';
     chaDesc.innerText = 'Innovative inventors with an unquenchable thirst for knowledge';
     $('#descList-1').text("You are introverted, intuitive, thinking, and prospecting.");
@@ -208,7 +199,8 @@ if(chosenMBTI == 'INTP'){
 }
 
 if(chosenMBTI == 'ESTP'){
-    $('#chaImg').attr("src","./character/"+chosenMBTI+".png")
+    $('#chaImg').attr("src","./no-shadow/"+chosenMBTI+".png")
+    $('#chaImg').attr("alt","The paprika character who represents ESTP")
     character.innerText = 'Entrepreneur Paprika';
     chaDesc.innerText = 'Smart, energetic and very perceptive people, who truly enjoy living on the edge';
     $('#descList-1').text("You are extraverted, observant, thinking, and prospecting.");
@@ -228,7 +220,8 @@ if(chosenMBTI == 'ESTP'){
 }
 
 if(chosenMBTI == 'ESFP'){
-    $('#chaImg').attr("src","./character/"+chosenMBTI+".png")
+    $('#chaImg').attr("src","./no-shadow/"+chosenMBTI+".png")
+    $('#chaImg').attr("alt","The cucumber character who represents ESFP")
     character.innerText = 'Entertainer Cucumber';
     chaDesc.innerText = 'Spontaneous, energetic and enthusiastic people – life is never boring around them';
     $('#descList-1').text("You are extroverted, observant, feeling, and prospecting.");
@@ -248,7 +241,8 @@ if(chosenMBTI == 'ESFP'){
 }
 
 if(chosenMBTI == 'ENFP'){
-    $('#chaImg').attr("src","./character/"+chosenMBTI+".png")
+    $('#chaImg').attr("src","./no-shadow/"+chosenMBTI+".png")
+    $('#chaImg').attr("alt","The bean character who represents ENFP")
     character.innerText = 'Campaigner Bean';
     chaDesc.innerText = 'Enthusiastic, creative and sociable free spirits, who can always find a reason to smile';
     $('#descList-1').text("You are extroverted, intuitive, feeling, and prospecting.");
@@ -268,7 +262,8 @@ if(chosenMBTI == 'ENFP'){
 }
 
 if(chosenMBTI == 'ENTP'){
-    $('#chaImg').attr("src","./character/"+chosenMBTI+".png")
+    $('#chaImg').attr("src","./no-shadow/"+chosenMBTI+".png")
+    $('#chaImg').attr("alt","The pepper character who represents ENTP")
     character.innerText = 'Debater Pepper';
     chaDesc.innerText = 'Smart and curious thinkers who cannot resist an intellectual challenge';
     $('#descList-1').text("You are extroverted, intuitive, thinking, and prospecting.");
@@ -288,7 +283,8 @@ if(chosenMBTI == 'ENTP'){
 }
 
 if(chosenMBTI == 'ESTJ'){
-    $('#chaImg').attr("src","./character/"+chosenMBTI+".png")
+    $('#chaImg').attr("src","./no-shadow/"+chosenMBTI+".png")
+    $('#chaImg').attr("alt","The onion character who represents ESTJ")
     character.innerText = 'Executive Onion';
     chaDesc.innerText = 'Excellent administrators, unsurpassed at managing things – or people';
     $('#descList-1').text("You are extroverted, observant, thinking, and judging.");
@@ -308,7 +304,8 @@ if(chosenMBTI == 'ESTJ'){
 }
 
 if(chosenMBTI == 'ESFJ'){
-    $('#chaImg').attr("src","./character/"+chosenMBTI+".png")
+    $('#chaImg').attr("src","./no-shadow/"+chosenMBTI+".png")
+    $('#chaImg').attr("alt","The avocado character who represents ESFJ")
     character.innerText = 'Consul Avocado';
     chaDesc.innerText = 'Extraordinarily caring, social and popular people, always eager to help';
     $('#descList-1').text("You are extroverted, observant, feeling, and judging.");
@@ -328,7 +325,8 @@ if(chosenMBTI == 'ESFJ'){
 }
 
 if(chosenMBTI == 'ENFJ'){
-    $('#chaImg').attr("src","./character/"+chosenMBTI+".png")
+    $('#chaImg').attr("src","./no-shadow/"+chosenMBTI+".png")
+    $('#chaImg').attr("alt","The pumpkin character who represents ENFJ")
     character.innerText = 'Protagonist Pumpkin';
     chaDesc.innerText = 'Charismatic and inspiring leaders, able to mesmerize their listeners';
     $('#descList-1').text("You are extroverted, intuitive, feeling, and judging.");
@@ -348,7 +346,8 @@ if(chosenMBTI == 'ENFJ'){
 }
 
 if(chosenMBTI == 'ENTJ'){
-    $('#chaImg').attr("src","./character/"+chosenMBTI+".png")
+    $('#chaImg').attr("src","./no-shadow/"+chosenMBTI+".png")
+    $('#chaImg').attr("alt","The garlic character who represents ENTJ")
     character.innerText = 'Commander Garlic';
     chaDesc.innerText = 'Bold, imaginative and strong-willed leaders, always finding a way – or making one';
     $('#descList-1').text("You are extroverted, intuitive, thinking, and judging.");
@@ -368,9 +367,6 @@ if(chosenMBTI == 'ENTJ'){
 }
 
 //animation
-
-//퍼펙리스트 리스트 변경
-
 $(document).ready(function(){
     $('#redo-btn').click(function(){
         window.location.replace("https://jiwonl3.github.io/PUI-FINAL/PUI-FINAL/index.html");
