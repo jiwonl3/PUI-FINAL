@@ -1,3 +1,4 @@
+// go to the question page
 $(document).ready(function(){
     $("#start-btn").click(function(){
         $("#start-page").css("display","none");
@@ -8,6 +9,7 @@ $(document).ready(function(){
     });
 });
 
+// go to the next question 
 $(document).ready(function(){
     $('#q1-option-1').click(function(){
         $('#q1').attr('id','q1-done');
@@ -184,7 +186,7 @@ $(document).ready(function(){
     });
 });
 
-
+// animation for loading page
 $(document).ready(function(){
     $('#q12-option-1').click(function(){
         $('#q12').attr('id','q12-done');
@@ -269,8 +271,7 @@ $(document).ready(function(){
     });
 });
 
-// result 구하는 영역!!!
-//여기서부터~!
+// add values into an array based on answering the question
 let getResultArr = [];
 $('.quest-1').click(function(){
     let clicked = $(this).val();
@@ -346,6 +347,7 @@ $('.quest-12').click(function(){
 
 let MBTI = '';
 
+//get the test result based on answering the questions
 function getResult() {
     window.localStorage.clear();
     let defineEI = Number(getResultArr[3])+Number(getResultArr[8])+Number(getResultArr[10]);
@@ -388,7 +390,7 @@ function getResult() {
     console.log(localStorage)
 }
 
-//여기가 잘못된 것 같아!
+//redirect when clicking the result button
 $(document).ready(function(){
     $('#result-btn').click(function(){
         getResult();

@@ -1,4 +1,4 @@
-/* 공통 */
+/* browse custom font */
 @font-face {
     font-family: 'cocola';
     src: url(./font/cocola/Cocola.ttf) format('truetype');
@@ -306,7 +306,7 @@ body {
 }
 
 
-/* 반응형 */
+/* responsive */
 @media only screen and (max-width: 768px) {
     #result-wrapper {
         display: flex;
@@ -378,7 +378,7 @@ body {
         margin: 10px auto 10px auto;
         line-height: 100%;
     }
-    /* 여기해야해 */
+
     #chardesc-responsive, .box2{
         display: flex;
         align-items: flex-start;

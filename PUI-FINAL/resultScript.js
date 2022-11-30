@@ -1,4 +1,4 @@
-// URL 파라미터 변경
+// Global variable
 let validation = '';
 let mbti = document.querySelector('.mbti');
 let character = document.querySelector('.result-name');
@@ -7,12 +7,7 @@ let adviceContent = document.querySelector('#adviceContent');
 let hateContent = document.querySelector('#hateContent');
 let chosenMBTI = '';
 
-
-// for(let i=0; i<localStorage.length;i++){
-//     validation = localStorage.key(i);
-// }
-
-//여기가 잘못됐다
+// check localStorage to see whether users land into the page by using a direct url or by doing the test.
 if("mbti" in localStorage){
     chosenMBTI = localStorage.getItem('mbti');
     history.pushState('','','result.html?mbti='+chosenMBTI)
@@ -29,7 +24,7 @@ if("mbti" in localStorage){
 
 mbti.innerText = '#' + chosenMBTI;
 
-
+// depending on the test result, it shows different content in the result page.
 if(chosenMBTI == 'ISTJ'){
     $('#chaImg').attr("src","./no-shadow/"+chosenMBTI+".png")
     $('#chaImg').attr("alt","The cabbage character who represents ISTJ")
@@ -366,7 +361,7 @@ if(chosenMBTI == 'ENTJ'){
     $('#wrpContent-1').text("Among colleagues,no one can be trusted more to ensure that projects are finished on time and by the book than this person.");
 }
 
-//animation
+//animation for toast pop up 
 $(document).ready(function(){
     $('#redo-btn').click(function(){
         window.location.replace("https://jiwonl3.github.io/PUI-FINAL/PUI-FINAL/index.html");
